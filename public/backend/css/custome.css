@@ -1,0 +1,159 @@
+/*Them*/
+:root {
+    --primary-color: #007bff; /* Default Bootstrap primary color */
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --table_bg-color: rgba(246, 244, 244, 0.95);
+    --card_bg-color: rgba(246, 244, 244, 0.95);
+    --btn-color: rgb(0, 183, 199);
+}
+
+.dark-theme {
+    --primary-color: #343a40; /* Dark theme color */
+    --bg-color: #222;
+    --text-color: #ffffff;
+    --table_bg-color: rgba(0, 0, 0, 0.95);
+    --card_bg-color: rgba(0, 0, 0, 0.95);
+    --btn-color: rgb(23, 219, 245);
+}
+
+/* Apply Variables */
+body.dark-theme {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+
+.theme-text {
+    color: var(--text-color);
+}
+.them-bg  {
+    background-color: var(--bg-color);
+}
+
+
+
+/* Sidebar background color */
+.sidebar {
+    background-color: #343a40; /* Dark theme */
+}
+
+/* Sidebar text color */
+.sidebar .nav-link {
+    color: #d1d3e2; /* Light grey color for text */
+}
+
+/* Sidebar item hover effect */
+.sidebar .nav-link:hover {
+    background-color: #1d2124; /* Darken background on hover */
+    color: #ffffff; /* Change text color on hover */
+}
+
+/* Active nav item */
+.sidebar .nav-item.active .nav-link {
+    background-color: #007bff; /* Blue background for active item */
+    color: #ffffff;
+}
+
+/* Custom collapse menu background */
+.collapse-inner {
+    background-color: #2c3034; /* Slightly lighter dark background */
+}
+
+/* Custom collapse item hover effect */
+.collapse-item:hover {
+    background-color: #007bff; /* Blue hover effect */
+    color: #ffffff;
+}
+
+
+
+
+/* Change the background color of the collapse inner area */
+.collapse-inner {
+    background-color: #000000 !important; /* Lighter dark color for the collapsed items */
+}
+
+/* Change the color of the collapse items */
+.collapse-item {
+    color: #ffffff !important;
+    background-color: #000000 !important;/* Light grey text color */
+    border-radius: 0 !important;
+
+}
+
+/* Hover effect for the collapse items */
+.collapse-item:hover {
+    background-color: #476be4 !important; /* Blue background on hover */
+    color: #f5f5f5 !important; /* White text on hover */
+    border-radius: 0px !important;
+}
+
+
+/* topbar */
+/* Navbar Background Color */
+.navbar {
+    background-color: #4e73df;
+}
+
+/* Navbar Link Color */
+.navbar .nav-link {
+    color: #ffffff;
+}
+
+/* Navbar Link Hover Color */
+.navbar .nav-link:hover {
+    color: #f8f9fc;
+}
+
+/* Navbar Search Input Box Color */
+.navbar .navbar-search input {
+    background-color: #f8f9fc;
+    border: 1px solid #ddd;
+}
+
+/* Navbar Search Button Color */
+.navbar .navbar-search button {
+    background-color: #4e73df;
+    color: #ffffff;
+}
+/* Navbar with Gradient Background */
+.navbar {
+    background: linear-gradient(90deg, #4e73df, #1cc88a);
+}
+/* Navbar Text Color */
+.navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f8f9fc;
+}
+input.form-control{
+    font-size: 15px;
+    padding: .375rem .75rem;
+    border-radius: 0;
+    border: 1px solid rgb(170, 170, 170);
+}
+textarea.form-control{
+    font-size: 15px;
+    padding: .375rem .75rem;
+    border-radius: 0;
+    border: 1px solid rgb(170, 170, 170);
+}
+select.form-select{
+    border-radius: 0;
+    border: 1px solid rgb(170, 170, 170);
+}
+
+button.btn{
+    font-size: 15px;
+    border-radius: 0;
+    border: 1px solid rgb(170, 170, 170);
+}
+table tr{
+    font-size: 15px;
+}
+table td{
+    padding: 0;
+}
