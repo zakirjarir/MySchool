@@ -180,6 +180,21 @@ class ModulesSeeder extends Seeder
                             'permissions' => $resourcePermissions,
                         ]
                     ]
+                ],
+                [
+                    'display_name' => 'Examination',
+                    'name' => 'examination',
+                    'link' => '#',
+                    'permissions' => ['show'],
+                    'icon' => 'fas fa-user-graduate',
+                    'submenus' => [
+                        [
+                            'display_name' => 'Exam Categories',
+                            'name' => 'exam_categories',
+                            'link' => '/admin/exam/exam_categories',
+                            'permissions' => $resourcePermissions,
+                        ],
+                    ]
                 ]
 
         ];

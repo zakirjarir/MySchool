@@ -4,12 +4,14 @@ import notFound from "../views/backend/NotFound.vue";
 import academic from "./academic";
 import user from "./user";
 import notice from "./notice";
+import exam from "./exam";
 
 const routes = [
     ...backend,
     ...academic,
     ...user,
-    ...notice
+    ...notice,
+    ...exam
 
     // {
     //     path: '/:pathMatch(.*)*',
