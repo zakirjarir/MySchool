@@ -28,6 +28,21 @@ trait Helper {
         }
     }
 
+    public function destroy(String $id)
+    {
+        try {
+            $data = $this->model->find($id);
+
+            if (!$data) {
+                return returnData(5000, null, 'Data Not found');
+            }
+            $data->delete();
+            return returnData(2000, 'success', "Successfully Deleted");
+        } catch (\Exception $exception) {
+            return returnData(5000, $exception->getMessage(), 'Not Deleted');
+        }
+    }
+
     public function genRandNum($start = '', $end = '', $min = 100, $max = 99 ,$chItem ='')
     {
         do {

@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Academic\Classes;
 use App\Models\Academic\Sections;
 use App\Models\Academic\Subjects;
+use App\Models\Notice\NoticeCategories;
 use App\Models\Users\Students;
 use Illuminate\Http\Request;
 use function App\Helper\returnData;
@@ -21,6 +22,7 @@ class UserSupportController extends Controller
         $data['allClasses'] = Classes::all();
         $data['allSection'] = Sections::all();
         $data['allStudent'] = Students::all();
+        $data['allCategory'] = NoticeCategories::all();
         return returnData('2000',$data ,'success' ,'success');
     }
 

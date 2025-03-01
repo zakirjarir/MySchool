@@ -46,6 +46,7 @@ Route::prefix('users')->group(function () {
 
 Route::prefix('notice')->group(function () {
     Route::resource('notice_categories',\App\Http\Controllers\Notice\NoticeCategoriesController::class);
+    Route::resource('notice',\App\Http\Controllers\Notice\NoticeController::class);
 });
 
 Route::resource('upload',\App\Http\Controllers\UplodController::class);

@@ -18,7 +18,7 @@
             <th v-if="can('parents_destroy' ,'parents_update','parents_edit')">Actions</th>
         </template>
         <template v-slot:data>
-            <tr v-for="(data , index) in dataList.data">
+            <tr v-for="(data , index) in dataList.data"> 
                 <td><input type="checkbox"></td>
                 <td>{{index + 1 }}</td>
                 <td>
